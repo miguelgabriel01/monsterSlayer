@@ -44,3 +44,59 @@
 .life-bar .life.danger{
   background: red;
 }
+
+.result{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.result .win{
+  color: green;
+}
+
+.result .lose{
+  color: red;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.new-gamer{
+  background: blue;
+  color: white;
+}
+
+.attack{
+  background: red;
+  color: white;
+}
+
+.new-gamer{
+  background: pink;
+  color: white;
+}
+
+.especial-attack{
+  background: orange;
+  color: white;
+}
+
+.heal{
+  background: green;
+  color: white;
+}
+
+.giv-up{
+  background: gray;
+  color: white;
+}

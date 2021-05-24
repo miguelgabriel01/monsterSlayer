@@ -25,8 +25,19 @@
       <div>{{monsterLife}}%</div>
     </div>
    </div>
-   <div class="panel result"></div>
-   <div class="panel buttons"></div>
+   <div class="panel result" v-if="hasResult">
+    <div class="win" v-if="monsterLife == 0">Voce ganhou</div>
+    <div class="lose" v-else>Voce perdeu</div>
+   </div>
+   <div class="panel buttons">
+     <template v-if="running">
+      <button class="btn attack">Ataque</button>
+      <button class="btn especial-attack">Ataque especial</button>
+      <button class="btn heal">Curar</button>
+      <button class="btn give-up">Desistir</button> 
+    </template>
+     <button class="btn new-gamer" v-else>Iniciar</button>
+   </div>
    <div class="panel logs"></div>
   </div>
   <script src="app.js">
